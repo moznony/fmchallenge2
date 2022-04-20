@@ -1,0 +1,83 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    background-color: var(--Pale-blue);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: stretch;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#container {
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+.head {
+    text-align: center;
+}
+
+img.hero {
+    width: 100%;
+}
+
+.foot {
+    display: flex;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    padding: 16px;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+}
+
+button.btn-p {
+    background-color: var(--Bright-blue);
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.btn-c {
+    background: none;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url('./images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: stretch;
+    }
+    
+}
